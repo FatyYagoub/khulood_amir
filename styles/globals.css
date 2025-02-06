@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scroll-x::-webkit-scrollbar {
+  width: 0;
+}
+html {
+  scroll-behavior: smooth;
+  color: black;
+}
+body [dir="rtl"] {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+}
+body [dir="ltr"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.user-svg :nth-child(1) {
+  fill: white;
+}
+.user-svg :nth-child(3) {
+  fill: white;
+  stroke: #565656;
+}
+.user-svg :nth-child(2) {
+  fill: #565656;
+}
+
+/* .swiper-container {
+  position: relative;
+  width: 90vw;
+}
+.swiper-container > .swiper-slide__content {
+  position: absolute;
+  top: 0;
+}
+.swiper-slide {
+  height: 300px;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+} */
+/* .swiper-slide.swiper-slide-active {
+  transform: scale(1);
+  background: #a93396;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 21px 38px;
+  border-radius: 8px;
+}
+.swiper-slide.swiper-slide-active :nth-child(1) {
+  color: white !important;
+}
+.swiper-slide.swiper-slide-active :nth-child(2) {
+  color: #fca6ee !important;
+}
+.swiper-slide.swiper-slide-active :nth-child(3) {
+  color: #fffbfb !important;
+}
+.swiper-slide__content {
+  height: 300px;
+} */
+
+.shape-ltr {
+  width: 100px;
+  height: 100px;
+  border-radius: 0 8px 0 100px;
+  -moz-border-radius: 0 8px 0 100px;
+  -webkit-border-radius: 0 8px 0 100px;
+}
+
+.shape-rtl {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px 0 100px 0;
+  -moz-border-radius: 8px 0 100px 0;
+  -webkit-border-radius: 8px 0 100px 0;
+}
+
+.FormGroup {
+  padding: 0;
+  border-style: none;
+  background-color: transparent;
+  will-change: opacity, transform;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 transparent;
+  border-radius: 4px;
+  color: #434243;
+}
+
+.FormRow {
+  color: #434243;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+.StripeElement {
+  color: RED;
+  width: 100%;
+  padding: 11px 15px 11px 0;
+}
+
+.stripe_button {
+  display: block;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
+  margin-top: 1rem;
+  background-color: #a93396;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #a93396;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  will-change: transform, background-color, box-shadow;
+  border: none;
+}
+.stripe_button:active {
+  background-color: #a93396;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 #a93396;
+  transform: scale(0.99);
+}
